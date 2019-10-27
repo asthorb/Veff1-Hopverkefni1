@@ -1,0 +1,98 @@
+@import "config";
+
+.form {
+
+  margin-bottom: $gutter * 2;
+
+  &__row {
+    @include row;
+
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    @include clm(12);
+
+    margin-bottom: $gutter;
+
+    @media (min-width: 800px) {
+      @include clm(6);
+    }
+
+    @media (min-width: $max-width) {
+      @include clm(5);
+
+      &:last-child {
+        @include off-lft(1);
+      }
+    }
+  }
+
+  &__fieldset {
+    border: 0;
+  }
+
+  &__legend {
+    margin-bottom: $gutter;
+
+    font-family: $font-heading;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    margin-bottom: $gutter;
+
+    font-size: 1.125rem;
+
+    @media (min-width: 800px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__label {
+    flex: 0 1 150px;
+  }
+
+  &__input,
+  &__select {
+    flex: 1;
+
+    padding: 5px;
+
+    font-family: $font-main;
+    font-size: 1.125rem;
+
+    border: 1px solid $color1;
+    border-radius: 3px;
+
+  }
+
+  &__select#month {
+    flex: 0 1 60px;
+  }
+
+  &__select#year {
+    flex: 0 1 80px;
+  }
+
+  &__expiry {
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__expiry &__select,
+  &__expiry &__label {
+    flex: 0;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+  }
+}

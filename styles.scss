@@ -1,0 +1,39 @@
+@import "scss/config";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@import "scss/button";
+@import "scss/karfa";
+@import "scss/footer";
+@import "scss/form";
+@import "scss/header";
+@import "scss/nav";
+@import "scss/section";
+@import "scss/starfsfolk";
+@import "scss/starfsmadur";
+@import "scss/vara";
+@import "scss/vorur";

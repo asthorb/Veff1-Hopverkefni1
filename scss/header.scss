@@ -1,0 +1,23 @@
+@import "config";
+
+.header {
+  margin-bottom: $gutter * 2;
+  background-color: $color3;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 3.75rem;
+    font-weight: 600;
+
+    margin-bottom: $gutter;
+
+    text-align: center;
+  }
+}

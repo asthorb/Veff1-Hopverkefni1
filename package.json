@@ -1,0 +1,18 @@
+{
+  "name": "hopaverkefni1",
+  "version": "1.0.0",
+  "description": "hopaverkefni",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles.scss styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css"
+  },
+  "author": "Matteo, Ásþór, Kristín",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
